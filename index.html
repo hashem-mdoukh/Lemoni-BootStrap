@@ -13,8 +13,8 @@
   </head>
   <body>
     <!-- Start Nav -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light shadow bg-light p-0">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="image/logo.png" alt="" /></a>
         <button
           class="navbar-toggler"
@@ -61,7 +61,6 @@
       </div>
     </nav>
     <!-- End Nav -->
-
     <!-- Start Slider -->
     <div
       id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -95,7 +94,7 @@
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        class="carousel-control-prev border-0"
         type="button"
         data-target="#carouselExampleCaptions"
         data-slide="prev"
@@ -104,7 +103,7 @@
         <span class="sr-only">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        class="carousel-control-next border-0"
         type="button"
         data-target="#carouselExampleCaptions"
         data-slide="next"
@@ -115,17 +114,13 @@
     </div>
     <!-- End Slider -->
 
-    <style>
-
-    </style>
-
     <!-- Cards -->
     <div class="container d-grid">
-      <div class="row cards">
-        <div class="col-3">
+      <div class="row cards position-relative">
+        <div class="col-md-6 col-lg-3">
           <div class="card">
-            <div class="icon"><i class="fab fa-facebook"></i></div>
-            <div class="card-body">
+            <div class="icon position-absolute d-flex justify-content-center align-items-center"><i class="fab fa-facebook"></i></div>
+            <div class="card-body text-center">
               <h5 class="card-title">Animation</h5>
               <div class="title-bottom-line"></div>
               <p class="card-text">
@@ -136,10 +131,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-md-6 col-lg-3">
           <div class="card">
-            <div class="icon"><i class="fab fa-linkedin"></i></div>
-            <div class="card-body">
+            <div class="icon position-absolute d-flex justify-content-center align-items-center"><i class="fab fa-linkedin"></i></div>
+            <div class="card-body text-center">
               <h5 class="card-title">Web Develop</h5>
               <div class="title-bottom-line"></div>
               <p class="card-text">
@@ -150,10 +145,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card">
-            <div class="icon"><i class="fab fa-instagram"></i></div>
-            <div class="card-body">
+        <div class="col-md-6 col-lg-3">
+          <div class="card active">
+            <div class="icon position-absolute d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></div>
+            <div class="card-body text-center">
               <h5 class="card-title">Graphic Desogn</h5>
               <div class="title-bottom-line"></div>
               <p class="card-text">
@@ -164,10 +159,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-md-6 col-lg-3">
           <div class="card">
-            <div class="icon"><i class="fab fa-twitter"></i></div>
-            <div class="card-body">
+            <div class="icon position-absolute d-flex justify-content-center align-items-center "><i class="fab fa-twitter"></i></div>
+            <div class="card-body text-center">
               <h5 class="card-title">Excellent Support</h5>
               <div class="title-bottom-line"></div>
               <p class="card-text">
@@ -184,7 +179,7 @@
     <!-- About us section -->
     <div class="about-us">
       <div class="container">
-        <div class="content">
+        <div class="content d-flex">
           <div class="box one">
             <h1>About Us</h1>
             <img src="image/section_title_line1.png" alt="" />
@@ -215,15 +210,14 @@
     <!-- Projects Section -->
     <div class="projects">
       <div class="container">
-        <div class="top-header">
+        <div class="top-header text-center">
           <h1>LATEST PROJECTS</h1>
           <img class="mb-5" src="image/section_title_line2.png" alt="" />
         </div>
-        <div class="row">
-          <div class="col-6 text ">
-
-            <h1 class="mb-3">PROJECT DETAILS</h1>
-            <h5 class="mb-4 fs-5">
+        <div class="row content-project">
+          <div class="col-lg-6 text-left info-project">
+            <h1 class="mb-3 text-light">PROJECT DETAILS</h1>
+            <h5 class="mb-4 fs-5 text-light">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit dolor sit
               Suspendisse et justo. Praesent mattis.
             </h5>
@@ -236,12 +230,12 @@
             <div class="line mx-auto my-5 w-100"></div>
 
             <div class="row">
-              <div class="col-4">
-                <h5 class="d-inline-block">SHARE</h5>
-                <i class="fas fa-share-square mx-2"></i>
+              <div class="col-md-3 col-lg-4 shear mb-3">
+                <h5 class="d-inline-block text-light">SHARE</h5>
+                <i class="fas fa-share-square mx-2 text-light"></i>
               </div>
-              <div class="col-8">
-                <ul class="socail">
+              <div class="col-md-9 col-lg-8 d-flex ">
+                <ul class="socail d-lg-block">
                   <i class="fab fa-facebook-f"></i>
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-google-plus-g"></i>
@@ -252,7 +246,7 @@
             </div>
           </div>
 
-          <div class="col-6 image" class="img-thumbnail">
+          <div class="col-lg-6 text-center image" class="img-thumbnail">
             <img  class="img-fluid p-3 bg-light" src="image/site-img02.jpg" alt="" />
           </div>
         </div>
@@ -263,33 +257,32 @@
     <!-- OUR PROCESS  -->
     <div class="our process">
       <div class="container">
-
-        <div class="top-header">
+        <div class="top-header text-center">
           <h1>OUR PROCESS</h1>
-          <img class="mb-5" src="image/section_title_line3.png" alt="" />
+          <img class="mb-3" src="image/section_title_line3.png" alt="" />
           <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</p>
         </div>
 
         <div class="row">
-          <div class="col-3  text-one">
-            <img  class="mx-auto transform-image" src="image/site-img06.png" alt="">
+          <div class="col-md-6 col-lg-3 text-one text-center box-process">
+            <img class="mx-auto transform-image" src="image/site-img06.png" alt="" onmousemove="this.src = '../image/site-img10.png' " onmouseout ="this.src = 'image/site-img06.png'">
             <h4 class="pt-3 mb-3">The Analysis Phase</h4>
             <p class="paragraph">Lorem ipsum dolor sit amet dolor sit consectetuer adipiscing elit.</p>
           </div>
-          <div class="col-3 text-one">
-            <img  class=" mx-auto transform-image" src="image/site-img07.png" alt="">
+          <div class="col-md-6 col-lg-3 text-one text-center box-process">
+            <img  class=" mx-auto transform-image" src="image/site-img07.png" alt="" onmousemove="this.src = '../image/site-img11.png' " onmouseout ="this.src = 'image/site-img07.png'">
             <h4 class="pt-3 mb-3">The Design Phase</h4>
-            <p class="paragraph">Lorem ipsum dolor sit amet dolor sit consectetuer adipiscing elit.</p>
+            <p class="paragraph w-sm-75">Lorem ipsum dolor sit amet dolor sit consectetuer adipiscing elit.</p>
           </div>
-          <div class="col-3 text-one">
-            <img class="mx-auto transform-image" src="image/site-img08.png" alt="">
+          <div class="col-md-6 col-lg-3 text-one text-center box-process">
+            <img class="mx-auto transform-image" src="image/site-img08.png" alt="" onmousemove="this.src = '../image/site-img12.png' " onmouseout ="this.src = 'image/site-img08.png'">
             <h4 class="pt-3 mb-3">Implementation Phase</h4>
-            <p class="paragraph">Lorem ipsum dolor sit amet dolor sit consectetuer adipiscing elit.</p>
+            <p class="paragraph w-sm-75">Lorem ipsum dolor sit amet dolor sit consectetuer adipiscing elit.</p>
           </div>
-          <div class="col-3 text-one">
-            <img class="mx-auto transform-image" src="image/site-img09.png" alt="">
+          <div class="col-md-6 col-lg-3 text-one text-center box-process">
+            <img class="mx-auto transform-image" src="image/site-img09.png" alt="" onmousemove="this.src = '../image/site-img13.png' " onmouseout ="this.src = 'image/site-img09.png'">
             <h4 class="pt-3 mb-3">Deployment Phase</h4>
-            <p class="paragraph" >Lorem ipsum dolor sit amet dolor sit consectetuer adipiscing elit.</p>
+            <p class="paragraph w-sm-75">Lorem ipsum dolor sit amet dolor sit consectetuer adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -303,12 +296,12 @@
           <h1>OUR SKILLS</h1>
           <img class="mb-5" src="image/section_title_line4.png" alt="" />
         </div>
-         <div class="row">
-           <div class="col-6 section-left">
-             <img class="line-img" src="image/site-img15.png" alt="">
-             <img  class="line-image" src="image/site-img34.png" alt="">
+         <div class="row content-skills">
+           <div class="col-lg-6 col-xl-6 section-left text-center">
+             <img class="line-img img-fluid" src="image/site-img15.png" alt="">
+             <!-- <img  class="line-image img-fluid" src="image/site-img34.png" alt=""> -->
            </div>
-           <div class="col-6 section-right">
+           <div class="col-lg-6 col-xl-6 section-right text-left">
              <h3>LOGO DESIGN</h3>
              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue.</p>
              <p class="mb-5" >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue.</p>
@@ -324,14 +317,14 @@
     <!-- Our Team -->
     <div class="team">
       <div class="container">
-        <div class="top-header">
+        <div class="top-header text-center">
           <h1>OUR TEAM</h1>
-          <img class="mb-5" src="image/section_title_line3.png" alt="" />
+          <img class="mb-3" src="image/section_title_line3.png" alt="" />
           <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</p>
         </div>
-
+        
         <div class="row">
-          <div class="col-4 filter">
+          <div class="col-md-6 col-xl-4 filter">
             <div class="team-img-overley"></div>
             <div class="team-imf-holder">
               <div class="team-imf-fream">
@@ -343,12 +336,12 @@
               </div>
             </div>
             <div class="title-bottom-line1"></div>
-            <div class="text-info">
+            <div class="text-info text-center">
               <h5>Michael Nicholas</h5>
               <span class="text-muted">Manager</span>
             </div>
           </div>
-          <div class="col-4 filter">
+          <div class="col-md-6 col-xl-4 filter">
             <div class="team-img-overley"></div>
             <div class="team-imf-holder">
               <div class="team-imf-fream">
@@ -360,12 +353,12 @@
               </div>
             </div>
             <div class="title-bottom-line1"></div>
-            <div class="text-info">
+            <div class="text-info text-center">
               <h5>Jessica Christopher</h5>
               <span class="text-muted">Developer</span>
             </div>
           </div>
-          <div class="col-4 filter">
+          <div class="col-md-6 col-xl-4 filter">
             <div class="team-img-overley"></div>
             <div class="team-imf-holder">
               <div class="team-imf-fream">
@@ -377,7 +370,7 @@
               </div>
             </div>
             <div class="title-bottom-line1"></div>
-            <div class="text-info">
+            <div class="text-info text-center">
               <h5>Robert Thomas</h5>
               <span class="text-muted">Marketing</span>
             </div>
@@ -388,26 +381,26 @@
     <!-- END Our Team -->
 
     <!-- Start portfolio -->
-     <div class="portfolio">
+     <div class="portfolio position-relative">
        <div class="container">
-         <div class="row">
-           <div class="col-3">
+         <div class="row portfolio-content">
+           <div class="col-lg-3 text-center">
              <div class="icon-circle">
                <div class="circle-inner">
                 <i class="fas fa-laptop"></i>
                </div>
              </div>
              <h4 class="mb-3 fst-normal fs-3">FULLY RESPONSIVE</h4>
-             <p class="lh-sm">Lorem ipsum dolor sit amet dolor consectetuer amet ipsum et justo dolor sit consectetuer sit amet</p>
-             <button type="button" class="btn btn-outline-secondary mx-auto">Read More..</button>
+             <p class="lh-sm w-75 mx-auto">Lorem ipsum dolor sit amet dolor consectetuer amet ipsum et justo dolor sit consectetuer sit amet</p>
+             <button type="button" class="btn btn-outline-secondary mx-auto shadow-none">Read More..</button>
              <div class="arrow-left"><img src="image/site-img22.png" alt=""></div>
            </div>
-           <div class="col-6">
+           <div class="col-lg-6">
              <div class="img-section">
-              <img class="w-100%" src="image/site-img21.png" alt="">
+              <img class="img-fluid" src="image/site-img21.png" alt="">
              </div>
            </div>
-           <div class="col-3">
+           <div class="col-lg-3 text-center">
             <div class="arrow-left"><img src="image/site-img23.png" alt=""></div>
              <div class="icon-circle">
               <div class="circle-inner">
@@ -415,55 +408,74 @@
                </div>
              </div>
              <h4 class="mb-3 fst-normal fs-3 text-center">LAYERED PSD FILES</h4>
-             <p>Lorem ipsum dolor sit amet dolor consectetuer amet ipsum et justo dolor sit consectetuer sit amet</p>
-             <button type="button" class="btn btn-outline-secondary mx-auto">Read More..</button>
-             </div>
+             <p class="lh-sm w-75 mx-auto">Lorem ipsum dolor sit amet dolor consectetuer amet ipsum et justo dolor sit consectetuer sit amet</p>
+             <button type="button" class="btn btn-outline-secondary mx-auto shadow-none">Read More..</button>
+            </div>
            </div>
          </div>
-       </div>
-     </div>
+      </div>
     <!-- End portfolio -->
 
     <!-- Start Services -->
-      <div class="services">
+     <div class="services"> 
         <div class="container">
-          <div class="top-header">
+          <div class="top-header text-center">
             <h1 class="fw-bolder">OUR SERVICES</h1>
             <img class="mb-4" src="image/section_title_line3.png" alt="">
             <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</ p>
           </div>
 
-          <div class="row">
-            <div class="col-4">
+          <div class="row parent">
+            <div class="col-lg-4 ser-right">
               <h3 class="mb-3 fst-normal fw-normal">PRAESENT MATTIS</h3>
-              <p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquamul ornare hendreri.</p>
+              <p class="text-secondary mb-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquamul ornare hendreri.</p>
               <ul class="ser-list">
-                <li class="text-secondary">Nullam turpis Cras dapibus lorem ipsum amet.</li>
-                <li class="text-secondary">Praesent mattis commodo augue ipsum lorem.</li>
-                <li class="text-secondary">Etiam dictum. Nunc enim. Sed massa tellus.</li>
-                <li class="text-secondary">Vivamus sit amet felis Vivamus et.</li>
+                <li class="text-secondary mb-2">Nullam turpis Cras dapibus lorem ipsum amet.</li>
+                <li class="text-secondary mb-2">Praesent mattis commodo augue ipsum lorem.</li>
+                <li class="text-secondary mb-2">Etiam dictum. Nunc enim. Sed massa tellus.</li>
+                <li class="text-secondary mb-2">Vivamus sit amet felis Vivamus et.</li>
               </ul>
-              <button type="button" class="btn btn-outline-dark">MORE SERVICES</button>
+              <button type="button" class="btn btn-outline shadow-none">MORE SERVICES</button>
             </div>
 
-            <div class="col-8">
-
+            <div class="col-lg-8 ser-left">
+                <div class="row child">
+                  <div class="col-12 serv-sec">
+                    <div class="position-relative d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center">WEB</span></div>
+                    <div class="position-relative d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center">GRAPHIC</span></div>
+                    <div class="position-relative d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center">ANIMATION</span></div>
+                    <div class="position-relative d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center">BRANDING</span></div>
+                  </div>
+                  <div class="subsecribe w-100">
+                    <div class="col-12 d-flex justify-content-start mb-4 sub">
+                      <i class="far fa-envelope"></i>
+                      <h1 class="text-uppercase">Subecribe</h1>
+                    </div>
+    
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control shadow-none" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">Enter Email</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
             </div>
           </div>
-        </div>
       </div>
     <!-- End Services -->
 
     <!-- Start Blog -->
-    <div class="blog">
-      <div class="conatiner">
-        <div class="top-header">
+    <div class="blog position-relative">
+      <div class="container-fluid">
+        <div class="top-header text-center">
           <h1 class="fw-bolder">FORM THE BLOG</h1>
           <img class="mb-4" src="image/section_title_line2.png" alt="">
-          <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</ p>
+          <p class="text w-sm-100">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</ p>
         </div>
-        <div class="row">
-          <div class="col-6">
+        <div class="row blog-content">
+          <div class="col-sm-6 col-md-5 col-lg-6 box-blog mb-3">
             <div class="one-half">
               <div class="post-img-holder">
                 <div class="post-img-frame">
@@ -489,7 +501,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6 col-md-5 col-lg-6 box-blog">
             <div class="one-half">
               <div class="post-img-holder">
                 <div class="post-img-frame">
@@ -522,21 +534,21 @@
 
     <!-- START OUR PRICING -->
       <div class="pricing">
-        <div class="conatiner">
-          <div class="top-header">
+        <div class="container">
+          <div class="top-header text-center">
             <h1 class="fw-bolder">OUR PRICING</h1>
             <img class="mb-4" src="image/section_title_line3.png" alt="">
             <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</ p>
           </div>
 
           <div class="row">
-            <div class="col-4 pricing-tap p-3">
+            <div class="col-md-6 col-lg-4 card">
               <div class="pricing-circle">$12</div>
               <div class="top-shape">
-                <!-- <img src="image/site-img27.png" alt=""> -->
+                <img src="image/site-img27-two.png" alt="">
               </div>
               <div class="plan-info-outer">
-                <div class="plan-info">
+                <div class="plan-info text-center">
                   <h2>Basic</h2>
                   <span>Monthly Plan</span>
                   <div class="title-bottom-line1"></div>
@@ -546,29 +558,22 @@
                     <li>24/7 Full Support</li>
                     <li>Free Domain Name</li>
                     <li>Money back Guarantee</li>
-                  </ul>
-                  <!-- <ul class="list-group w-75 mx-auto">
-                    <li class="list-group-item">
-                      <h2>Basic</h2>
-                      <span>Monthly Plan</span>
-                      <div class="title-bottom-line1"></div>
-                      <p>1 GB Bandwidth</p>
-                    </li>
-                    <li class="list-group-item">256 MB Memory</li>
-                    <li class="list-group-item">24/7 Full Support</li>
-                    <li class="list-group-item">Free Domain Name</li>
-                    <li class="list-group-item">Money back Guarantee</li>
-                  </ul> -->
-                  <button type="button" class="btn btn-dark">Sing Up</button>
+                  </ul> 
+                  <button type="button" class="btn btn-dark shadow-none">Sing Up</button>
                 </div>
               </div>
-              <div class="bottom-shape"></div>
+              <div class="bottom-shape">
+                <img src="image/site-img26.png" alt="">
+              </div>
             </div>
-            <div class="col-4 pricing-tap">
+
+            <div class="col-md-6 col-lg-4 card">
               <div class="pricing-circle">$29</div>
-              <div class="top-shape"></div>
+              <div class="top-shape">
+                <img src="image/site-img27-two.png" alt="">
+              </div>
               <div class="plan-info-outer">
-                <div class="plan-info">
+                <div class="plan-info text-center">
                   <h2>Standard</h2>
                   <span>Monthly Plan</span>
                   <div class="title-bottom-line1"></div>
@@ -579,16 +584,21 @@
                     <li>Free Domain Name</li>
                     <li>Money back Guarantee</li>
                   </ul>
-                  <button type="button" class="btn btn-dark">Sing Up</button>
+                  <button type="button" class="btn btn-dark shadow-none">Sing Up</button>
                 </div>
               </div>
-              <div class="bottom-shape"></div>
+              <div class="bottom-shape">
+                <img src="image/site-img26.png" alt="">
+              </div>
             </div>
-            <div class="col-4 pricing-tap">
+
+            <div class="col-md-6 col-lg-4 card">
               <div class="pricing-circle">$58</div>
-              <div class="top-shape"></div>
+              <div class="top-shape">
+                <img src="image/site-img27-two.png" alt="">
+              </div>
               <div class="plan-info-outer">
-                <div class="plan-info">
+                <div class="plan-info text-center">
                   <h2>Unlimited</h2>
                   <span>Monthly Plan</span>
                   <div class="title-bottom-line1"></div>
@@ -599,27 +609,29 @@
                     <li>Free Domain Name</li>
                     <li>Money back Guarantee</li>
                   </ul>
-                  <button type="button" class="btn btn-dark">Sing Up</button>
+                  <button type="button" class="btn btn-dark shadow-none">Sing Up</button>
                 </div>
               </div>
-              <div class="bottom-shape"></div>
+              <div class="bottom-shape">
+                <img src="image/site-img26.png" alt="">
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     <!-- END OUR PRICING -->
 
     <!-- Start Clints -->
-      <div class="our-clints">
+      <div class="our-clints position-relative">
         <div class="container">
           <div class="top-header text-center">
             <h1 class="fw-bolder mb-3">OUR CLINTS SAYS</h1>
             <img class="mb-4" src="image/section_title_line2.png" alt="">
-            <p class="text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</ p>
+            <p class="text mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare hendrerit augue</ p>
           </div>
 
-          <div class="row">
-            <div class="col-6">
+          <div class="row our-clints-content">
+            <div class="col-md-5 col-lg-6">
               <div class="one-half-clint">
                 <div class="clint-img-holder">
                   <div class="clint-img-frame">
@@ -641,7 +653,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-5 col-lg-6 w-100">
               <div class="one-half-clint">
                 <div class="clint-img-holder">
                   <div class="clint-img-frame">
@@ -669,24 +681,24 @@
     <!-- End Clints -->
 
     <!-- Start holder -->
-    <div class="section-holder">
+    <div class="section-holder position-relative">
       <div class="container">
         <div class="row">
-          <div class="col-8">
+          <div class="col-lg-8">
+
             <div class="row">
-              <div class="col-11">
+              <div class="col-sm-9 col-md-10 col-lg-10">
                 <h3>LATEST NEWS</h3>
               </div>
-              <div class="col-1 arrow-dec">
+              <div class="col-sm-3 col-md-2 col-lg-2 arrow-dec">
                 <i class="fas fa-arrow-left arrow"></i>
                 <i class="fas fa-arrow-right arrow"></i>
               </div>
             </div>
-            <img class="mb-5" src="image/section_title_line5.png" alt="">
+            <img class="mb-5 img-fluid" src="image/section_title_line5.png" alt="">
             <div class="row">
-              <div class="col-6">
-                <img src="image/site-img37.jpg" alt="" class="new-img-holder mb-3">
-                <!-- <img  class="line-image-bottom" src="image/site-img35.png" alt=""> -->
+              <div class="col-lg-6">
+                <img src="image/site-img37.jpg" alt="" class="new-img-holder mb-3 img-fluid">
                 <h4 class="fs-1 fst-normal lh-sm">Rutrum adipiscing luctus</h4>
                 <div class="new-info">
                   <span>By John Deo /</span>
@@ -695,9 +707,8 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetuer dolor sit et adipiscing elit. Suspendisse et justo</p>
               </div>
-              <div class="col-6">
-                <img src="image/site-img38.jpg" alt="" class="new-img-holder mb-3">
-                <!-- <img  class="line-image-bottom" src="image/site-img35.png" alt=""> -->
+              <div class="col-lg-6">
+                <img src="image/site-img38.jpg" alt="" class="new-img-holder mb-3 img-fluid">
                 <h4 class="fs-3 fst-normal lh-sm">Rutrum adipiscing luctus</h4>
                 <div class="new-info">
                   <span>By John Deo /</span>
@@ -708,20 +719,29 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
-    
+          <div class="col-md-4 col-lg-4">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
     <!-- End holder -->
 
     <!-- Start Section footer -->
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3">
             <div class="footer-log">
               <img class="d-block mb-3" src="image/footer_logo.png" alt="">
               <span class="address">Address: No.28 - 63739 street lorem ipsum City, Country</span>
@@ -730,7 +750,7 @@
               <span class="address">Email: email@example.com</span>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3">
             <h3 class="text-light">Recent Posts</h3>
             <div class="footer-image">
               <img class="mb-4" src="image/section_title_line7.png" alt="">
@@ -758,24 +778,24 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3">
             <h3 class="text-light">Tags</h3>
             <div class="footer-image">
               <img class="mb-4" src="image/section_title_line7.png" alt="">
             </div>
             <ul class="tags">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Awesome</li>
+              <li class="active">Photography</li>
+              <li>UI Design</li>
+              <li>Branding</li>
+              <li>All</li>
+              <li>Business</li>
+              <li>Creative</li>
+              <li>Design</li>
+              <li>Wireframe</li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3">
             <h3 class="text-light">Flickr Gallery</h3>
             <div class="footer-image">
               <img class="mb-4" src="image/section_title_line7.png" alt="">
@@ -783,9 +803,10 @@
           </div>
 
           <div class="footer-bottom-line mb-5 mt-5"></div>
+
           </div>
           <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3">
               <ul class="social-media d-flex">
                 <li><i class="fab fa-facebook"></i></li>
                 <li><i class="fab fa-twitter"></i></li></li>
@@ -793,7 +814,7 @@
                 <li><i class="fab fa-linkedin"></i></li>
               </ul>
             </div>
-            <div class="col-9 ">
+            <div class="d-none d-md-block col-lg-6">
               <div class="quick-links-holder">
                 <ul class="quick-link d-flex">
                   <li class=" px-2">About Us</li>
@@ -807,13 +828,72 @@
                 </ul>
               </div>
             </div>
+            <div class="d-none d-md-block col-lg-3">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <span class="input-group-text submit" id="inputGroup-sizing-default">Submit</span>
+              </div>
+            </div>
         </div>
       </div>
     </div>
     <!-- End Section footer -->
 
+    <!-- Start Arrow UP -->
+      <div class="arrow">
+        <button type="button"class="arrow-up"><i class="fas fa-arrow-up"></i></button>
+      </div>
+    <!-- Start Arrow UP -->
+
+    <!-- Start Settings Box -->
+      <div class="settings-box">
+        <div class="icon-set"><i class="fas fa-wrench"></i></div>
+
+        <div class="option-box">
+            <h4>Color Option</h4>
+            <ul class="colorlist">
+                <li class="active" data-color="#FF9800"></li>
+                <li  data-color="#E91E63"></li>
+                <li  data-color="#009688"></li>
+                <li  data-color="#03A9F4"></li>
+                <li  data-color="#4CAF50"></li>
+            </ul>
+        </div>
+     </div>
+    <!-- End Settings Box -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      // Scroll To Top Button
+      let btn = document.querySelector(".arrow .arrow-up");
+
+      window.onscroll = function () {
+        if (window.scrollY > 1500) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      };
+
+      btn.onclick = function () {
+        window.scrollTo({
+          left: 0,
+          top: 0,
+          behavior: "smooth",
+        });
+      };
+
+      // Open And Close Settings Box
+      let boxOpen = document.querySelector(".settings-box");
+
+      let icon = document.querySelector(".icon-set");
+
+      icon.onclick = function () {
+        boxOpen.classList.toggle("open");
+      };
+
+    </script>
   </body>
 </html>
