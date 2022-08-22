@@ -349,7 +349,6 @@ li {
 }
 
 .team-img-three {
-    background-image: url(../image/site-img20.jpg);
     transform: rotate(45deg);
 }
 .team-img-three img{
@@ -743,7 +742,10 @@ background-color: var(---main-color);
     padding: 0;
     transition: .3s;
 }
-
+.pricing .container .card .top-shape img,
+.pricing .container .card .bottom-shape img {
+    max-width: 100%;
+}
 .pricing .card:hover {
     background-color: var(---main-color);
 }
